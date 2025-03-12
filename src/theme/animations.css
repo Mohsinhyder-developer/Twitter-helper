@@ -1,0 +1,51 @@
+.page-transition {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.list-item {
+  animation: slideIn 0.4s ease-out;
+  animation-fill-mode: both;
+}
+
+.list-item:nth-child(1n) { animation-delay: 0.1s; }
+.list-item:nth-child(2n) { animation-delay: 0.15s; }
+.list-item:nth-child(3n) { animation-delay: 0.2s; }
+.list-item:nth-child(4n) { animation-delay: 0.25s; }
+.list-item:nth-child(5n) { animation-delay: 0.3s; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+} 

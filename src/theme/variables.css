@@ -1,2 +1,17 @@
 /* For information on how to create your own theme, please see:
 http://ionicframework.com/docs/theming/ */
+
+/* Add these custom styles */
+ion-button {
+    text-transform: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+ion-button:hover {
+    opacity: 0.9;
+}
+
+ion-toolbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
