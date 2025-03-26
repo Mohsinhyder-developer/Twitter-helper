@@ -1,6 +1,7 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet, setupIonicReact, IonContent } from '@ionic/react';
+import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+import { useState, useEffect } from 'react';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -34,31 +35,57 @@ import './theme/variables.css';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Follow from './pages/follow';
+import ErrorBoundary from './components/ErrorBoundary';
 
 setupIonicReact();
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/">
-          <Redirect to="/greetings" />
-        </Route>
-        
-        <Route exact path="/greetings">
-          <Login />
-        </Route>
+const App: React.FC = () => {
+  // Add state declarations
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string>('');
 
-        <Route exact path="/dm-check">
-          <Register />
-        </Route>
+  // Memory cleanup effect
+  useEffect(() => {
+    const cleanup = () => {
+      setCopiedIndex(null);
+      setSearchQuery('');
+    };
 
-        <Route exact path="/follow-requests">
-          <Follow />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+    // Add event listener for page unload
+    window.addEventListener('beforeunload', cleanup);
+
+    // Cleanup function
+    return () => {
+      window.removeEventListener('beforeunload', cleanup);
+      cleanup();
+    };
+  }, []);
+
+  return (
+    <ErrorBoundary>
+      <IonApp>
+        <IonReactRouter>
+          <IonRouterOutlet>
+            <Route exact path="/">
+              <Redirect to="/greetings" />
+            </Route>
+            
+            <Route exact path="/greetings">
+              <Login />
+            </Route>
+
+            <Route exact path="/dm-check">
+              <Register />
+            </Route>
+
+            <Route exact path="/follow-requests">
+              <Follow />
+            </Route>
+          </IonRouterOutlet>
+        </IonReactRouter>
+      </IonApp>
+    </ErrorBoundary>
+  );
+};
 
 export default App;

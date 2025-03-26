@@ -84,91 +84,116 @@ const Register: React.FC = () => {
                                     />
                                 ))
                             ) : (
-                                // Your actual list items with animation class
                                 [
-                                    "Hey, can you check your DMs? Just sent you something!",
-                                    "Quick DM for you—mind taking a look?",
-                                    "Sent you a message! Let me know what you think.",
-                                    "Just slid into your DMs—check it out when you can.",
-                                    "I dropped you a DM, take a peek when you get a sec!",
-                                    "Hey, check your inbox! Sent something your way.",
-                                    "Just sent you a message. Looking forward to your reply!",
-                                    "Check your DMs, I think you'll like what I sent.",
-                                    "Psst… there's a message waiting for you in your DMs!",
-                                    "I just sent you something cool—go check your DMs!",
-                                    "DM alert! Pop into your inbox real quick.",
-                                    "You got mail! Well… a DM. Check it out!",
-                                    "Sent you a DM—let me know what you think.",
-                                    "Hey, just dropped you a message. Mind checking?",
-                                    "Slide into your own DMs and see what I sent!",
-                                    "I left you a little something in your inbox. Take a look!",
-                                    "Sent you a quick message. Hope to hear back soon!",
-                                    "Knock knock! Your DMs are calling.",
-                                    "Hey! There's a fresh new message waiting for you.",
-                                    "I sent you a DM, let me know what you think!",
-                                    "DM alert! Your inbox just got more interesting.",
-                                    "Just sent you a message—hope it makes your day!",
-                                    "Hey, take a moment and check your DMs.",
-                                    "There's a message from me in your inbox—go take a look!",
-                                    "I sent you something fun—check your DMs!",
-                                    "Got a sec? Just sent you a message!",
-                                    "I just messaged you—hope you like what I sent!",
-                                    "Hey, I reached out in your DMs! Let me know your thoughts.",
-                                    "Slide over to your DMs—I have something for you!",
-                                    "I just sent you a message, can't wait for your reply!",
-                                    "Open your DMs when you get a chance, I sent you something!",
-                                    "Hey, sent you a message! Let me know what you think.",
-                                    "Check your DMs when you're free—I left you something!",
-                                    "There's a surprise in your inbox—go check!",
-                                    "I sent you something exciting—take a look!",
-                                    "Just a heads-up: there's a message waiting for you!",
-                                    "Your inbox is a little fuller now—check your DMs!",
-                                    "Hey, a little something is waiting for you in your DMs!",
-                                    "Just sent you a DM—drop me a reply when you can.",
-                                    "Ding ding! Your DMs have been updated. Check them out!",
-                                    "Your DM inbox just got more interesting—take a peek!",
-                                    "Check your messages when you can! Sent you something.",
-                                    "There's a little note from me in your inbox—go see!",
-                                    "Hey, just pinging you to check your DMs.",
-                                    "I left something for you in your messages—take a look!",
-                                    "Check your DMs when you have a moment—sent you a quick one!",
-                                    "Sent you a message! Looking forward to your response.",
-                                    "Your inbox is waiting—check it out when you can.",
-                                    "I dropped a DM your way! Let me know what you think.",
-                                    "Your messages just got an update—check them out!"
+                                    "Hey! Sorry for disturbing you again, can you please check your DMs for me? I think there's a Twitter issue 😊",
+                                    "Heya!! Would you please spare a moment and check your request message for me? I've been eagerly waiting for your attention <3",
+                                    "Heya! I've sent you some messages in your request message. Can you please check them out for me? I'm looking forward to you <3",
+                                    "Heya! I've sent you some messages in your DMs regarding your character. Can you please check them out for me? I'm looking forward to you <3",
+                                    "Heya! I've sent you some messages in your request message. Can you please check them out for me? I'm looking forward to you <3",
+                                    "Hey! Just a quick reminder to check your DMs. I sent you something important. Hope to hear from you soon! 😊",
+                                    "Heya!! If you have a moment, please check your request message. I've been waiting for your response <3",
+                                    "Heya! I sent you some messages in your DMs. Can you please take a look for me? I'd really appreciate it! <3",
+                                    "Hey! I sent you something in your DMs. Can you please check it out for me? Looking forward to your reply! 😊",
+                                    "Heya! I sent you some messages about your character. Can you check your request message? I'd love to hear back <3",
+                                    "Hey! I just wanted to make sure you saw my messages. Can you check your DMs? Thanks a lot! 😊",
+                                    "Heya! I sent you a request message! Can you please check it out? I'd love to hear your thoughts <3",
+                                    "Hey! I sent you a DM regarding your character! Can you take a quick look for me? I'd appreciate it a lot 😊",
+                                    "Heya!! Would you mind checking your request message? I sent you something special and I can't wait for your response! <3",
+                                    "Hey! I sent you something in your request message! Could you check it out for me? I'd love to hear from you 😊",
+                                    "Heya! Just dropping by to remind you to check your DMs! I sent you something really cool <3",
+                                    "Hey! I sent you a message in your request! Can you take a moment to check? I'd really appreciate it! 😊",
+                                    "Heya! Your character caught my eye! I sent you something in your DMs. Can you check it out? <3",
+                                    "Hey! I just sent you a message in your DMs. Can you please take a look? Looking forward to hearing from you! 😊",
+                                    "Heya!! Could you please check your request message? I sent you something and I'd love to hear your thoughts! <3",
+                                    "Hey! Just a friendly reminder to check your DMs! I sent you something really interesting 😊",
+                                    "Heya! I left a message for you in your request messages! Can you take a moment to check it out? <3",
+                                    "Hey! I sent you something in your request messages! Can you please check it? I'd love to hear back 😊",
+                                    "Heya! I dropped a message for you in your DMs! Please check it out when you get a chance <3",
+                                    "Hey! Just a small reminder to check your DMs! I sent you something I think you'll love 😊",
+                                    "Heya!! I sent you a message about your character! Please check your request messages when you can <3",
+                                    "Hey! Can you check your request messages for me? I sent you something interesting! 😊",
+                                    "Heya! I sent you some messages in your DMs! Please take a look when you can, I'd love to hear back! <3",
+                                    "Hey! Just a quick reminder to check your DMs! I sent you something I think you'll love 😊",
+                                    "Heya! Your character is amazing! I sent you something in your request messages, please check it out! <3",
+                                    "Hey! I left a message for you in your request! Can you please check it and let me know? 😊",
+                                    "Heya! Just checking in! Can you take a look at your DMs? I sent you something special <3",
+                                    "Hey! I sent you something in your request messages! Can you please check? I'd love to hear from you 😊",
+                                    "Heya!! I sent you something in your DMs! Can you check it when you have time? Looking forward to hearing from you <3",
+                                    "Hey! Your character is awesome! I sent you something in your request messages, please check 😊",
+                                    "Heya! I just wanted to remind you to check your DMs! I sent you something cool <3",
+                                    "Hey! Could you check your request messages for me? I sent you something interesting! 😊",
+                                    "Heya! I sent you some messages in your DMs! Please take a look when you get a chance <3",
+                                    "Hey! Just a quick reminder to check your DMs! I sent you something fun 😊",
+                                    "Heya! Your character is amazing! I sent you something in your request messages, please check it out! <3",
+                                    "Hey! I left a message for you in your request! Can you please check it and let me know? 😊",
+                                    "Heya! Just checking in! Can you take a look at your DMs? I sent you something special <3",
+                                    "Hey! I sent you something in your request messages! Can you please check? I'd love to hear from you 😊",
+                                    "Heya!! I sent you something in your DMs! Can you check it when you have time? Looking forward to hearing from you <3",
+                                    "Hey! Your character is awesome! I sent you something in your request messages, please check 😊",
+                                    "Heya! I just wanted to remind you to check your DMs! I sent you something cool <3",
+                                    "Hey! Could you check your request messages for me? I sent you something interesting! 😊",
+                                    "Heya! I sent you some messages in your DMs! Please take a look when you get a chance <3",
+                                    "Hey! Just a quick reminder to check your DMs! I sent you something fun 😊",
+                                    "Heya! Your character is amazing! I sent you something in your request messages, please check it out! <3",
+                                    "Hey! I left a message for you in your request! Can you please check it and let me know? 😊",
+                                    "Heya! Just checking in! Can you take a look at your DMs? I sent you something special <3",
+                                    "Hey! I sent you something in your request messages! Can you please check? I'd love to hear from you 😊",
+                                    "Heya!! I sent you something in your DMs! Can you check it when you have time? Looking forward to hearing from you <3",
+                                    "Hey! Your character is awesome! I sent you something in your request messages, please check 😊",
+                                    "Heya! I just wanted to remind you to check your DMs! I sent you something cool <3",
+                                    "Hey! Could you check your request messages for me? I sent you something interesting! 😊",
+                                    "Heya! I sent you some messages in your DMs! Please take a look when you get a chance <3",
+                                    "Hey! Just a quick reminder to check your DMs! I sent you something fun 😊",
+                                    "Heya! Your character is amazing! I sent you something in your request messages, please check it out! <3"
                                 ].filter(message => 
                                     message.toLowerCase().includes(searchQuery.toLowerCase())
                                 ).map((message, index) => (
                                     <li key={index} 
-                                        className="list-item"
+                                        className={message.startsWith("===") ? "separator" : "list-item"}
                                         style={{
-                                            fontSize: '18px',
-                                            padding: '12px',
-                                            margin: '8px 0',
-                                            borderRadius: '8px',
-                                            backgroundColor: '#f5f5f5',
-                                            boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-                                            display: 'flex',
-                                            justifyContent: 'space-between',
-                                            alignItems: 'center',
-                                            cursor: 'pointer'
-                                        }}>
-                                        <span style={{ flex: 1 }}>
-                                            <strong>{index + 1}. </strong>
-                                            {highlightText(message, searchQuery)}
-                                        </span>
-                                        <IonIcon
-                                            icon={copiedIndex === index ? checkmarkOutline : copyOutline}
-                                            style={{
+                                            ...(message.startsWith("===") ? {
                                                 fontSize: '20px',
-                                                color: copiedIndex === index ? '#2dd36f' : '#666',
-                                                cursor: 'pointer',
-                                                padding: '8px',
-                                                marginLeft: '12px',
-                                                flexShrink: 0
-                                            }}
-                                            onClick={() => handleCopy(message, index)}
-                                        />
+                                                padding: '16px',
+                                                margin: '16px 0',
+                                                textAlign: 'center',
+                                                backgroundColor: '#e0e0e0',
+                                                fontWeight: 'bold',
+                                                borderRadius: '8px'
+                                            } : {
+                                                fontSize: '18px',
+                                                padding: '12px',
+                                                margin: '8px 0',
+                                                borderRadius: '8px',
+                                                backgroundColor: '#f5f5f5',
+                                                boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                                                display: 'flex',
+                                                justifyContent: 'space-between',
+                                                alignItems: 'center',
+                                                cursor: 'pointer'
+                                            })
+                                        }}>
+                                        {message.startsWith("===") ? (
+                                            message
+                                        ) : (
+                                            <>
+                                                <span style={{ flex: 1 }}>
+                                                    <strong>{index + 1}. </strong>
+                                                    {highlightText(message, searchQuery)}
+                                                </span>
+                                                <IonIcon
+                                                    icon={copiedIndex === index ? checkmarkOutline : copyOutline}
+                                                    style={{
+                                                        fontSize: '20px',
+                                                        color: copiedIndex === index ? '#2dd36f' : '#666',
+                                                        cursor: 'pointer',
+                                                        padding: '8px',
+                                                        marginLeft: '12px',
+                                                        flexShrink: 0
+                                                    }}
+                                                    onClick={() => handleCopy(message, index)}
+                                                />
+                                            </>
+                                        )}
                                     </li>
                                 ))
                             )}
